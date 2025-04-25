@@ -1,12 +1,5 @@
-
-
 // Seleciona a barra de navegação
 let navbar = document.querySelector(".navbar");
-
-
-
-
-
 
 // Configura o comportamento durante o scroll da página
 window.onscroll = () => {
