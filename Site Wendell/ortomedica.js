@@ -48,6 +48,26 @@ document.addEventListener("DOMContentLoaded", function() {
   updateVisibility();
 });
 
-
-
+//5 mudar cadeira de cor
+// Função para mudar a cor da imagem
+function changeColor(elementId, color) {
+  const productImage = document.getElementById(elementId);
+  
+  switch(color) {
+    case 'white':
+      productImage.style.filter = 'brightness(100%) grayscale(0%)';
+      break;
+    case 'black':
+      productImage.style.filter = 'brightness(0%) grayscale(100%)';
+      break;
+    case 'gray':
+      productImage.style.filter = 'brightness(50%) grayscale(100%)';
+      break;
+    case 'brown':
+      productImage.style.filter = 'sepia(100%) saturate(300%) hue-rotate(10deg)';
+      break;
+    default:
+      productImage.style.filter = 'none';
+  }
+}
 

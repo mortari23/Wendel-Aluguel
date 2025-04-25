@@ -183,39 +183,44 @@
 
     <section class="products" id="products">
       <h1 class="heading">Nossos <span>Produtos</span></h1>
-
       
-
       <div class="box-container">
-        <!-- Cards de Produtos (colocar imagens dos produtos) -->
-        <div class="box">
-          <img
-            src=""
-            alt="Produto"
-            width="250"
-            class="image"
-          />
-          <h3>Colchão caixa de ovo</h3>
-          <p>D23, D28 e D33 (Casal e Solteiro)</p>
-          <a href="#location" class="btn">Compre na Loja</a>
+        <!-- Card 1 -->
+        <div class="product-card">
+          <div class="card-image">
+            <img src="imagens_produtos/cadeira_bistro_ametista.jpg" alt="Cadeira de Plástico" id="chair1">
+          </div>
+          <div class="card-content">
+            <h3>Cadeira Bistro</h3>
+            <p class="price">R$ 5,00/dia</p>
+            <div class="color-options">
+              <button class="color-btn white" onclick="changeColor('chair1', 'white')"></button>
+              <button class="color-btn black" onclick="changeColor('chair1', 'black')"></button>
+              <button class="color-btn gray" onclick="changeColor('chair1', 'gray')"></button>
+            </div>
+            <a href="https://wa.me/5517991524960" class="btn rent-btn">Alugue já</a>
+          </div>
         </div>
-
-        <div class="box">
-          <img
-            src="imagens_produtos/luva_extra_longapng-removebg-preview.png"
-            alt="Produto"
-            width="250"
-            class="image"
-          />
-          <h3>Luva de sol extra longa</h3>
-          <p>P, M, G, GG (cores preto e bege)</p>
-          <a href="#location" class="btn">Compre na Loja</a>
+    
+        <!-- Card 2 -->
+        <div class="product-card">
+          <div class="card-image">
+            <img src="imagens_produtos/mesa.png" alt="Mesa Redonda" id="chair2">
+          </div>
+          <div class="card-content">
+            <h3>Mesa Redonda</h3>
+            <p class="price">R$ 10,00/dia</p>
+            <div class="color-options">
+              <button class="color-btn white" onclick="changeColor('chair2', 'white')"></button>
+              <button class="color-btn black" onclick="changeColor('chair2', 'black')"></button>
+            </div>
+            <a href="https://wa.me/5517991524960" class="btn rent-btn">Alugue já</a>
+          </div>
         </div>
-
-      
+    
+        <!-- Adicione mais cards conforme necessário -->
+      </div>
     </section>
-    <button class="btn toggle-btn">Ver mais</button>
-
     <!-- Fale com Conosco -->
     <section class="contact" id="location">
       <h1 class="heading"><span>Fale</span> Conosco</h1>

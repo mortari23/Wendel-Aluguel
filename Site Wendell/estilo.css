@@ -370,137 +370,92 @@ section {
   display: block;
 }
 
-/* Seção Produtos */
-.products .box-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 1.5rem;
-  align-items: center;
-}
-
-.btn_filtro {
-  margin-top: 1rem;
-  display: inline-block;
-  padding: 0.9rem 3rem;
-  font-size: 1.7rem;
-  color: var(--text-primary);
-  background: linear-gradient(
-    135deg,
-    var(--primary-blue) 0%,
-    var(--accent-teal) 100%
-  );
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 500;
-  align-items: center;
-}
-
-.products .box-container .box {
-  text-align: center;
+/* Estilos para os cards de produtos */
+.product-card {
+  background: rgba(255, 255, 255, 0.05);
   border: var(--border);
-  padding: 2rem;
-  background: rgba(255, 255, 255, 0.02);
   border-radius: 16px;
+  overflow: hidden;
   transition: var(--hover-transition);
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
-.products .box-container .box:hover {
+.product-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 24px rgba(0, 3, 31, 0.2);
-}
-
-.products .box-container .box .icons a {
-  height: 5rem;
-  width: 5rem;
-  line-height: 5rem;
-  font-size: 2rem;
-  border: var(--border);
-  color: var(--text-primary);
-  margin: 0.3rem;
-}
-
-.products .box-container .box .icons a:hover {
-  background: var(--main-color);
-}
-
-.products .box-container .box .image {
-  padding: 2.5rem 0;
-  filter: drop-shadow(0 0 1rem rgba(235, 235, 235, 0.39));
-}
-
-.products .box-container .box .image img {
-  height: 25rem;
-}
-
-.products .box-container .box .content h3 {
-  color: var(--text-primary);
-  font-size: 2.5rem;
-}
-
-
-
-
-.products .box-container.collapsed {
-  max-height: 950px;
-}
-
-.products .box.hidden {
-  display: none !important;
-  opacity: 0;
-  transform: scale(0.95);
-  transition: all 0.3s ease;
-}
-
-
-.toggle-btn {
-  margin: 3rem auto;
-  display: block;
-  position: relative;
-  padding: 1.2rem 4rem;
-  background: linear-gradient(
-    135deg,
-    var(--primary-blue) 0%,
-    var(--accent-teal) 100%
-  );
-  border: 2px solid var(--border-color);
-  margin: 3rem auto;
-  display: block;
-}
-
-.toggle-btn::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background: rgba(255, 255, 255, 0.1);
-  opacity: 0;
-  transition: var(--hover-transition);
 }
 
-.toggle-btn:hover::after {
-  opacity: 1;
+.card-image {
+  padding: 2rem;
+  background: rgba(10, 25, 47, 0.3);
 }
 
-.products .box.hidden {
-  display: none !important;
-  opacity: 0;
-  transform: scale(0.95);
-  transition: all 0.3s ease;
-  
+.card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  transition: filter 0.3s ease;
 }
 
-.filter-buttons .btn.active {
-  background: linear-gradient(
-    135deg,
-    var(--primary-blue) 0%,
-    var(--accent-teal) 100%
-  );
-  
-  color: white;
-  box-shadow: 0 0 15px rgba(42, 92, 130, 0.5);
-  
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-content h3 {
+  color: var(--text-primary);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+  color: var(--secondary-green);
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.color-options {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.color-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--border-color);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-btn:hover {
+  transform: scale(1.1);
+}
+
+.color-btn.white {
+  background-color: #ffffff;
+}
+
+.color-btn.black {
+  background-color: #000000;
+}
+
+.color-btn.gray {
+  background-color: #808080;
+}
+
+.color-btn.brown {
+  background-color: #964B00;
+}
+
+.rent-btn {
+  width: 100%;
+  margin-top: 0;
 }
 
 /* Contato */
