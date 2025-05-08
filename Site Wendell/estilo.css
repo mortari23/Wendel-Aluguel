@@ -114,8 +114,8 @@ section {
 }
 
 .header .logo img {
-  height: 5rem;
-  
+  height: 14rem;
+  width: 200px;
 }
 
 .header .navbar a {
@@ -244,7 +244,7 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(imagens/Mesas-e-Cadeiras-de-Plastico-para-locacao.webp) no-repeat;
+  background: url(imagens/fundologo.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
