@@ -430,8 +430,8 @@ section {
   margin-bottom: 1.5rem;
 }
 
-.card-content.descricao{
-  
+.descricao{
+  font-size: 10.8px;
 }
 
 .color-options {
