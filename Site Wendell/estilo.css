@@ -114,8 +114,8 @@ section {
 }
 
 .header .logo img {
-  height: 14rem;
-  width: 200px;
+  
+  width: 150px;
 }
 
 .header .navbar a {
@@ -371,21 +371,34 @@ section {
 }
 
 /* Estilos para os cards de produtos */
-.product-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: var(--border);
-  border-radius: 16px;
-  overflow: hidden;
-  transition: var(--hover-transition);
-  text-align: center;
-  max-width: 300px;
-  margin: 0 auto;
+/* Container dos produtos */
+.products .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
 }
 
-.product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0, 3, 31, 0.2);
-  background: rgba(255, 255, 255, 0.1);
+/* Ajustes nos cards existentes */
+.product-card {
+  flex: 1 1 280px; /* Cresce, encolhe, base de 280px */
+  max-width: 300px;
+  margin: 0; /* Remove a margem automática que centralizava */
+  /* mantenha o resto do seu CSS atual */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .products .box-container {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .product-card {
+      width: 90%;
+      max-width: 350px;
+  }
 }
 
 .card-image {
@@ -415,6 +428,10 @@ section {
   font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 1.5rem;
+}
+
+.card-content.descricao{
+  
 }
 
 .color-options {
@@ -456,6 +473,17 @@ section {
 .rent-btn {
   width: 100%;
   margin-top: 0;
+}
+@media (max-width: 768px) {
+  .products-container {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .product-card {
+      width: 90%;
+      max-width: 350px;
+  }
 }
 
 /* Contato */
